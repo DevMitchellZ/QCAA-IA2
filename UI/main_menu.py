@@ -1,8 +1,7 @@
-import time
 from tkinter import *
 import sys
 
-sys.path.insert(0, r"C:\Users\mitch\Documents\Github\IA2-TopTrumps\API")
+sys.path.insert(0, r"C:\Users\mitch\Documents\Git Repositories\IA2-TopTrumps\API")
 
 from firebase_authentication import firebase_authentication
 
@@ -82,9 +81,3 @@ class main_menu():
                 Label(self.login_window, text="Login Failed", fg="red", font=("calibri", 11)).pack()           
 
         Button(self.login_window, text="Login", width=10, height=1, bg="green", command=lambda : (firebase(self.email_field.get(), self.password_field.get()))).pack()
-
-
-
-nigger = main_menu()
-
-nigger.selection_window()
